@@ -15,6 +15,7 @@ Obsoletes:	redhat-release
 Obsoletes:	mandrake-release
 Obsoletes:	issue
 Obsoletes:	issue-pure
+Obsoletes:	issue-logo
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
