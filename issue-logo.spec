@@ -14,6 +14,7 @@ BuildArch:	noarch
 Obsoletes:	redhat-release
 Obsoletes:	mandrake-release
 Obsoletes:	issue
+Obsoletes:	issue-pure
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
