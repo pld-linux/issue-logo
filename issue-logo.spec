@@ -31,30 +31,30 @@ rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_sysconfdir}
 
 cat > $RPM_BUILD_ROOT%{_sysconfdir}/issue <<EOF
-  _ 
+  _
  / )     PLD Linux 1.99 (Ac) \m, \r
 / /       Welcome to \n
  ( -.      \u user(s)
- \\\   \\\     
-  \\\  \\\\\\\       
-   \`| \\\\\\\        
-    |  \` 
-    | 
+ \\\   \\\
+  \\\  \\\\\\\
+   \`| \\\\\\\
+    |  \`
+    |
 
 EOF
 echo -ne "\l " >> $RPM_BUILD_ROOT%{_sysconfdir}/issue
 
 cat > $RPM_BUILD_ROOT%{_sysconfdir}/issue.net <<EOF
-  _ 
+  _
  / )     PLD Linux 1.99 (Ac) %m, %r
 / /       Welcome to %h
- ( -.      
- \\\   \\\     
-  \\\  \\\\\\\       
-   \`| \\\\\\\        
+ ( -.
+ \\\   \\\
+  \\\  \\\\\\\
+   \`| \\\\\\\
     |  \`
-    | 
- 
+    |
+
 EOF
 echo "1.99 PLD Linux (Ac)" > $RPM_BUILD_ROOT%{_sysconfdir}/pld-release
 
