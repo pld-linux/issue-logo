@@ -3,8 +3,8 @@ Summary(de):	PLD Linux Release-Datei mit logo
 Summary(pl):	Wersja Linuksa PLD z logiem
 Name:		issue-logo
 Version:	1.0
-Release:	4
-License:	free
+Release:	5
+License:	GPL
 Group:		Base
 Group(de):	Gründsätzlich
 Group(es):	Base
