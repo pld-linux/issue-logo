@@ -1,8 +1,13 @@
+
+%define	distname	Ra
+%define	distversion	1.1
+%define	distrelease	"%{distversion} PLD Linux (%{distname})"
+
 Summary:	PLD Linux release file with logo
 Summary(de):	PLD Linux Release-Datei mit logo
 Summary(pl):	Wersja Linuksa PLD z logiem
 Name:		issue-logo
-Version:	1.1
+Version:	%{distversion}
 Release:	2
 License:	GPL
 Group:		Base
@@ -32,7 +37,7 @@ install -d $RPM_BUILD_ROOT%{_sysconfdir}
 
 cat > $RPM_BUILD_ROOT%{_sysconfdir}/issue <<EOF
   _ 
- / )     PLD Linux 1.1 (Ra) \m, \r
+ / )     PLD Linux %{distversion} (%{distname}) \m, \r
 / /       Welcome to \n
  ( -.      \u user(s)
  \\\   \\\     
@@ -46,7 +51,7 @@ echo -ne "\l " >> $RPM_BUILD_ROOT%{_sysconfdir}/issue
 
 cat > $RPM_BUILD_ROOT%{_sysconfdir}/issue.net <<EOF
   _ 
- / )     PLD Linux 1.1 (Ra) %m, %r
+ / )     PLD Linux %{distversion} (%{distname}) %m, %r
 / /       Welcome to %h
  ( -.      
  \\\   \\\     
@@ -56,7 +61,7 @@ cat > $RPM_BUILD_ROOT%{_sysconfdir}/issue.net <<EOF
     | 
  
 EOF
-echo "1.1 PLD Linux (Ra)" > $RPM_BUILD_ROOT%{_sysconfdir}/pld-release
+echo %{distrelease} > $RPM_BUILD_ROOT%{_sysconfdir}/pld-release
 
 %clean
 rm -rf $RPM_BUILD_ROOT
