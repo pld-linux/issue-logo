@@ -8,19 +8,17 @@ Summary(de):	PLD Linux Release-Datei mit logo
 Summary(pl):	Wersja Linuksa PLD z logiem
 Name:		issue-logo
 Version:	%{distversion}
-Release:	1
+Release:	2
 License:	GPL
 Group:		Base
-BuildArch:	noarch
-BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
-Obsoletes:	redhat-release
-Obsoletes:	mandrake-release
 Obsoletes:	issue
 Obsoletes:	issue-alpha
 Obsoletes:	issue-fancy
 Obsoletes:	issue-pure
-Obsoletes:	redhat-release
 Obsoletes:	mandrake-release
+Obsoletes:	redhat-release
+BuildArch:	noarch
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 PLD Linux release file with logo.
@@ -31,6 +29,8 @@ PLD Linux Release-Datei mit logo.
 %description -l pl
 Wersja Linuksa PLD z logiem.
 
+%prep
+
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_sysconfdir}
@@ -40,10 +40,10 @@ cat > $RPM_BUILD_ROOT%{_sysconfdir}/issue <<EOF
  / )     PLD Linux %{distversion} (%{distname}) \m, \r
 / /       Welcome to \n
  ( -.      \u user(s)
- \\\   \\\
-  \\\  \\\\\\\
-   \`| \\\\\\\
-    |  \`
+ \\\\   \\\\
+  \\\\  \\\\\\\\
+   \\\`| \\\\\\\\
+    |  \\\`
     |
 
 EOF
@@ -54,10 +54,10 @@ cat > $RPM_BUILD_ROOT%{_sysconfdir}/issue.net <<EOF
  / )     PLD Linux %{distversion} (%{distname}) %m, %r
 / /       Welcome to %h
  ( -.
- \\\   \\\
-  \\\  \\\\\\\
-   \`| \\\\\\\
-    |  \`
+ \\\\   \\\\
+  \\\\  \\\\\\\\
+   \\\`| \\\\\\\\
+    |  \\\`
     |
 
 EOF
