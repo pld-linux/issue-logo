@@ -19,8 +19,8 @@ PLD Linux release file with logo.
 %description -l de
 PLD Linux Release-Datei mit logo.
 
-%description
-Wersja Linuxa PLD z logiem.
+%description -l pl
+Wersja Linuksa PLD z logiem.
 
 
 %install
