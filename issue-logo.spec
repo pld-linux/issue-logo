@@ -3,7 +3,7 @@ Summary(de):	PLD Linux Release-Datei mit logo
 Summary(pl):	Wersja Linuksa PLD z logiem
 Name:		issue-logo
 Version:	1.0
-Release:	3
+Release:	4
 License:	free
 Group:		Base
 Group(de):	Gründsätzlich
@@ -15,7 +15,7 @@ Obsoletes:	redhat-release
 Obsoletes:	mandrake-release
 Obsoletes:	issue
 Obsoletes:	issue-pure
-Obsoletes:	issue-logo
+Obsoletes:	issue-fancy
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
