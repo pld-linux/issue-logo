@@ -1,17 +1,20 @@
-Summary:	    PLD Linux release file with logo
+Summary:	PLD Linux release file with logo
 Summary(de):	PLD Linux Release-Datei mit logo
-Summary(pl):	Wersja Linuxa PLD z logiem
-Name:		      issue-logo
-Version:	    1.0
-Release:	    1
-Copyright:	  free
-Group:		    Base
-Group(pl):	  Podstawowe
-Buildarch:	  noarch
-Obsoletes:	  redhat-release
-Obsoletes:	  mandrake-release
+Summary(pl):	Wersja Linuksa PLD z logiem
+Name:		issue-logo
+Version:	1.0
+Release:	2
+License:	free
+Group:		Base
+Group(de):	Gründsätzlich
+Group(es):	Base
+Group(pl):	Podstawowe
+Group(pt_BR):	Base
+BuildArch:	noarch
+Obsoletes:	redhat-release
+Obsoletes:	mandrake-release
 Obsoletes:	issue
-BuildRoot:	  %{tmpdir}/%{name}-%{version}-root-%(id -u -n)
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 PLD Linux release file with logo.
@@ -22,7 +25,6 @@ PLD Linux Release-Datei mit logo.
 %description -l pl
 Wersja Linuksa PLD z logiem.
 
-
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_sysconfdir}
@@ -30,7 +32,7 @@ install -d $RPM_BUILD_ROOT%{_sysconfdir}
 cat > $RPM_BUILD_ROOT%{_sysconfdir}/issue <<EOF
 c
   _ 
- / )     PLD GNU/Linux 1.0 (Ra) \m, \r
+ / )     PLD Linux 1.0 (Ra) \m, \r
 / /       Welcome to \n
  ( -.      \u user(s)
  \\\   \\\     
@@ -44,7 +46,7 @@ echo -ne "\l " >> $RPM_BUILD_ROOT%{_sysconfdir}/issue
 
 cat > $RPM_BUILD_ROOT%{_sysconfdir}/issue.net <<EOF
   _ 
- / )     PLD GNU/Linux 1.0 (Ra) %m, %r
+ / )     PLD Linux 1.0 (Ra) %m, %r
 / /       Welcome to %h
  ( -.      
  \\\   \\\     
