@@ -15,6 +15,7 @@ Obsoletes:	issue
 Obsoletes:	issue-alpha
 Obsoletes:	issue-fancy
 Obsoletes:	issue-pure
+Obsoletes:	issue-nice
 Obsoletes:	mandrake-release
 Obsoletes:	redhat-release
 BuildArch:	noarch
