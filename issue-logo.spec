@@ -3,15 +3,16 @@ Summary(de):	PLD Linux Release-Datei mit logo
 Summary(pl):	Wersja Linuksa PLD z logiem
 Name:		issue-logo
 Version:	1.0
-Release:	5
+Release:	6
 License:	GPL
 Group:		Base
 BuildArch:	noarch
 Obsoletes:	redhat-release
 Obsoletes:	mandrake-release
 Obsoletes:	issue
-Obsoletes:	issue-pure
+Obsoletes:	issue-alpha
 Obsoletes:	issue-fancy
+Obsoletes:	issue-pure
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -22,8 +23,6 @@ PLD Linux Release-Datei mit logo.
 
 %description -l pl
 Wersja Linuksa PLD z logiem.
-
-%prep
 
 %install
 rm -rf $RPM_BUILD_ROOT
