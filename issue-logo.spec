@@ -3,7 +3,7 @@ Summary(de):	PLD Linux Release-Datei mit logo
 Summary(pl):	Wersja Linuksa PLD z logiem
 Name:		issue-logo
 Version:	1.1
-Release:	1
+Release:	2
 License:	GPL
 Group:		Base
 BuildArch:	noarch
@@ -31,30 +31,30 @@ rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_sysconfdir}
 
 cat > $RPM_BUILD_ROOT%{_sysconfdir}/issue <<EOF
-  _
+  _ 
  / )     PLD Linux 1.1 (Ra) \m, \r
 / /       Welcome to \n
  ( -.      \u user(s)
- \\\   \\\
-  \\\  \\\\\\\
-   \`| \\\\\\\
-    |  \`
-    |
+ \\\   \\\     
+  \\\  \\\\\\\       
+   \`| \\\\\\\        
+    |  \` 
+    | 
 
 EOF
 echo -ne "\l " >> $RPM_BUILD_ROOT%{_sysconfdir}/issue
 
 cat > $RPM_BUILD_ROOT%{_sysconfdir}/issue.net <<EOF
-  _
+  _ 
  / )     PLD Linux 1.1 (Ra) %m, %r
 / /       Welcome to %h
- ( -.
- \\\   \\\
-  \\\  \\\\\\\
-   \`| \\\\\\\
+ ( -.      
+ \\\   \\\     
+  \\\  \\\\\\\       
+   \`| \\\\\\\        
     |  \`
-    |
-
+    | 
+ 
 EOF
 echo "1.1 PLD Linux (Ra)" > $RPM_BUILD_ROOT%{_sysconfdir}/pld-release
 
