@@ -6,10 +6,6 @@ Version:	1.0
 Release:	5
 License:	GPL
 Group:		Base
-Group(de):	Gründsätzlich
-Group(es):	Base
-Group(pl):	Podstawowe
-Group(pt_BR):	Base
 BuildArch:	noarch
 Obsoletes:	redhat-release
 Obsoletes:	mandrake-release
