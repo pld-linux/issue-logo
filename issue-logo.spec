@@ -10,6 +10,7 @@ Group(pl):	  Podstawowe
 Buildarch:	  noarch
 Obsoletes:	  redhat-release
 Obsoletes:	  mandrake-release
+Obsoletes:	issue
 BuildRoot:	  %{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
