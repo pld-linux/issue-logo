@@ -1,6 +1,6 @@
 
 %define	distname	Ac
-%define	distversion	1.99
+%define	distversion	2.0
 %define	distrelease	"%{distversion} PLD Linux (%{distname})"
 
 Summary:	PLD Linux release file with logo
@@ -8,7 +8,7 @@ Summary(de):	PLD Linux Release-Datei mit logo
 Summary(pl):	Wersja Linuksa PLD z logiem
 Name:		issue-logo
 Version:	%{distversion}
-Release:	2
+Release:	1
 License:	GPL
 Group:		Base
 Obsoletes:	issue
