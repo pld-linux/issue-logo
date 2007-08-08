@@ -8,12 +8,15 @@ Summary(de.UTF-8):	PLD Linux Release-Datei mit logo
 Summary(pl.UTF-8):	Wersja Linuksa PLD z logiem
 Name:		issue-logo
 Version:	%{distversion}
-Release:	2
+Release:	3
 License:	GPL
 Group:		Base
 Provides:	issue
 Obsoletes:	mandrake-release
 Obsoletes:	redhat-release
+Conflicts:	issue-alpha < 2.99-2
+Conflicts:	issue-fancy < 2.99-2
+Conflicts:	issue-pure < 2.99-5
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
