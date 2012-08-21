@@ -27,10 +27,10 @@ Release:	1%{?with_snap:.%{snapshot}}
 License:	GPL
 Group:		Base
 Provides:	issue
-Conflicts:	issue-alpha < 3.0
-Conflicts:	issue-fancy < 3.0
-Conflicts:	issue-nice < 3.0
-Conflicts:	issue-pure < 3.0
+Conflicts:	issue-alpha < 3.0-1
+Conflicts:	issue-fancy < 3.0-1
+Conflicts:	issue-nice < 3.0-1
+Conflicts:	issue-pure < 3.0-1
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
