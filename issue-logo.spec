@@ -1,11 +1,10 @@
-%define	distnamever	%(. /etc/os-release 2>/dev/null ; echo $VERSION)
-%define	distversion	%([ -e /etc/os-release ] && . /etc/os-release 2>/dev/null ; echo ${VERSION_ID:-0})
+%define	distversion	%(. /etc/os-release 2>/dev/null ; echo $VERSION)
 
 Summary:	PLD Linux prelogin message and identification file with logo
 Summary(de.UTF-8):	PLD Linux Systemidentifikationsdatei mit logo
 Summary(pl.UTF-8):	Plik z logiem identyfikujący system PLD Linux, wyświetlany przed zalogowaniem
 Name:		issue-logo
-Version:	%{distversion}
+Version:	3.0
 Release:	2
 License:	GPL
 Group:		Base
@@ -37,7 +36,7 @@ install -d $RPM_BUILD_ROOT%{_sysconfdir}
 
 cat > $RPM_BUILD_ROOT%{_sysconfdir}/issue <<EOF
   _
- / )     PLD Linux %{distnamever} \m, \r
+ / )     PLD Linux %{distversion} \m, \r
 / /       Welcome to \n
  ( -.      \u user(s)
  \\\\   \\\\
@@ -52,7 +51,7 @@ echo -ne "\l " >> $RPM_BUILD_ROOT%{_sysconfdir}/issue
 
 cat > $RPM_BUILD_ROOT%{_sysconfdir}/issue.net <<EOF
   _
- / )     PLD Linux %{distnamever} %m, %r
+ / )     PLD Linux %{distversion} %m, %r
 / /       Welcome to %h
  ( -.
  \\\\   \\\\
