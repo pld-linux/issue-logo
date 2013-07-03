@@ -5,12 +5,12 @@ Summary(de.UTF-8):	PLD Linux Systemidentifikationsdatei mit logo
 Summary(pl.UTF-8):	Plik z logiem identyfikujący system PLD Linux, wyświetlany przed zalogowaniem
 Name:		issue-logo
 Version:	3.0
-Release:	2
+Release:	3
 License:	GPL
 Group:		Base
 BuildRequires:	pld-release >= 3.0
 %requires_eq	pld-release
-Provides:	issue
+Provides:	issue = %{version}-%{release}
 Conflicts:	issue-alpha < 3.0-1
 Conflicts:	issue-fancy < 3.0-1
 Conflicts:	issue-nice < 3.0-1
